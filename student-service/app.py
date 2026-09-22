@@ -1,12 +1,13 @@
 from flask import Flask, request, jsonify
 import pymysql
+import os
 
 app = Flask(__name__)
 
-DB_HOST = "database-1.ccfmm2ceoi8k.us-east-1.rds.amazonaws.com"
-DB_USER = "admin"
-DB_PASSWORD = "Piyush321"
-DB_NAME = "studentdb"
+DB_HOST = os.getenv("DB_HOST")
+DB_USER = os.getenv("DB_USER")
+DB_PASSWORD = os.getenv("DB_PASSWORD")
+DB_NAME = os.getenv("DB_NAME")
 
 
 def get_connection():
