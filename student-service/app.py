@@ -23,7 +23,7 @@ def get_connection():
 @app.route("/", methods=["GET"])
 def home():
     return jsonify({
-        "message": "Student REST API is running"
+        "message": "Version 2 - Deployed using Jenkins!"
     })
 
 
