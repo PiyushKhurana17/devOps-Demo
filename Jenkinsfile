@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     environment {
-        AWS_REGION = 'ap-south-1'
-        AWS_ACCOUNT_ID = 'YOUR_ACCOUNT_ID'
+        AWS_REGION = 'us-east-1'
+        AWS_ACCOUNT_ID = '703671929202'
         ECR_REPOSITORY = 'image-regi'
         IMAGE_NAME = 'cloud-image'
 
