@@ -1,12 +1,11 @@
-pipeline {
+Opipeline {
     agent any
 
     stages {
 
-      	stage('Clone') {
+        stage('Clone') {
             steps {
-                git branch: 'main',
-                    url: 'https://github.com/PiyushKhurana17/devOps-Demo.git'
+                git 'https://github.com/PiyushKhurana17/devOps-Demo.git'
             }
         }
 
